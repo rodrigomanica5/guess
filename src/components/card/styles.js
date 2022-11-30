@@ -3,14 +3,15 @@ import colors from "../../constants/colors";
 
 export const styles = StyleSheet.create({
     cardContainer: {
-        backgroundColor: colors.white,
-        shadowColor: colors.black,
+        backgroundColor: "white",
+        shadowColor: "#000",
         shadowOffset: {
             width: 0,
             height: 2,
         },
-        shadowOpacity: 0.25,
-        shadowRadius: 3.84,
-        elevation: 5,
+        shadowOpacity: 0.23,
+        shadowRadius: 2.62,
+
+        elevation: 4,
     }
 })

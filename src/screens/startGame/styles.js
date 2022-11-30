@@ -3,29 +3,27 @@ import colors from "../../constants/colors";
 
 export const styles = StyleSheet.create({
     container: {
+        width: "100%",
         flex: 1,
         alignItems: "center",
     },
     title: {
         fontSize: 20,
-        marginTop: 50,
+        marginTop: 25,
         marginBottom: 25,
     },
     inputContainer: {
-        width: "100%",
-        justifyContent: "center",
+        height: "35%",
+        justifyContent: "space-evenly",
         borderRadius: 2,
-        paddingVertical: 30,
     },
     inputTitle: {
         textAlign: "center",
-        paddingBottom: 20,
         color: colors.grey,
         fontSize: 16,
     },
     input: {
-        fontSize: 70,
-        paddingBottom: 50,
+        fontSize: 60,
         textAlign: "center",
     },
     buttonContainer: {
@@ -36,5 +34,17 @@ export const styles = StyleSheet.create({
     },
     button: {
     },
-
+    confirmedNumberCard: {
+        width: "80%",
+        height: "35%",
+        justifyContent: "space-evenly",
+        marginTop: 20,
+    },
+    confirmedNumberContainer: {
+        alignItems: "center",
+    },
+    confirmedText: {
+        color: colors.text,
+        fontSize: 16,
+    },
 })
