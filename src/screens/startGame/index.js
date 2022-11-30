@@ -6,7 +6,7 @@ import { styles } from './styles'
 
 
 
-function StartGameScreen() {
+function StartGameScreen({onHandleStartGame}) {
 
     const [number, setNumber] = useState('')
     const [numberConfirmed, setNumberConfirmed] = useState(null)
@@ -35,10 +35,6 @@ function StartGameScreen() {
         }
     }
 
-    const onHandleStartGame = () => {
-        null
-    }
-
     const confirmedOutput = () => {
         return (
             confirmed
@@ -49,12 +45,12 @@ function StartGameScreen() {
                                 ? <Text style={styles.confirmedText}>Even number!</Text>
                                 : <Text style={styles.confirmedText}>Odd number!</Text>
                         }
-                        <NumberContainer number={selectedNumber}/>
+                        <NumberContainer number={numberConfirmed}/>
                     </View>
                     <View>
                         <Button
                             title='Start Game'
-                            onPress={onHandleStartGame}
+                            onPress={() => onHandleStartGame(numberConfirmed)}
                             color={colors.text}
                         />
                     </View>
